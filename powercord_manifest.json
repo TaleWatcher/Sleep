@@ -1,0 +1,8 @@
+{
+    "name": "Sleep",
+    "version": "0.1.0",
+    "author": "TaleWatcher#6722",
+    "license": "MIT",
+    "theme": "index.scss",
+    "description": "Changes the UI I guess. Changes it a lot."
+}
