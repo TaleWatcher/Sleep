@@ -36,6 +36,11 @@
     // z-index: 100;
     #status-picker {
         min-height: 100vh;
+        background-color: var(--background-floating);
+        background-image: url("https://raw.githubusercontent.com/TaleWatcher/Sleep/main/src/img/pic.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 40vh;
+        background-position: top;
         > div {
             top: 40vh;
             display: flex;
