@@ -8,8 +8,13 @@
         margin: 0;
         position: relative;
         &[aria-expanded="true"] {
-            bottom: 5em;
+            visibility: hidden;
+            bottom: 60vh;
             &, ~ div {z-index: 1100;}
+            svg {
+                visibility: visible;
+                left: 88px;
+            }
             ~ .flex-1xMQg5 {
                 left: -32px;
                 min-width: 240px - 48px;
