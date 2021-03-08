@@ -33,9 +33,15 @@
                 bottom: 56vh;
                 min-width: 100%;
                 width: 300px;
-                > div {padding: 0 8px;}
-                > div:first-child div {font-size: 20px;}
-                > div:last-child div {font-size: 10px;}
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div {width: 100%; text-align: center;}
+                > div:last-child > div > div {
+                    opacity: 1;
+                    transform: none;
+                    span {visibility: collapse;}
+                }
             }
             ~ .flex-1xMQg5 {
                 left: -200%;
