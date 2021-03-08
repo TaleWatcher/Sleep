@@ -35,7 +35,8 @@
     div {
         transition: none;
         #status-picker {
-            min-height: 100vh;
+            min-height: 100vh - 2.9vh;
+            top: 2.9vh;
             background-image: linear-gradient(#00000080, #00000080), url("https://raw.githubusercontent.com/TaleWatcher/Sleep/main/src/img/pic.jpg");
             background-repeat: no-repeat, no-repeat;
             background-size: auto 28vh, auto 28vh;
