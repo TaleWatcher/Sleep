@@ -28,7 +28,7 @@
                 rect {display: none;}
             }
             ~ .flex-1xMQg5 {
-                left: -32px;
+                left: -100%;
                 min-width: 240px - 48px;
             }
         }
@@ -64,6 +64,5 @@
             }
         }
     }
-    ~ div .tooltip-2QfLtc {z-index: 100;}
 }
 .layer-3QrUeG[aria-label="USER_SETTINGS"] {z-index: 1101;} // Fix status picker showing over settings
