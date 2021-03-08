@@ -10,9 +10,9 @@
     position: relative;
     .avatarWrapper-2yR4wp {
         // display: none;
-        margin: 0;
         position: relative;
         &[aria-expanded="true"] {
+            margin: 0;
             visibility: hidden;
             bottom: 74vh;
             div {
