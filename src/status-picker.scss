@@ -8,11 +8,24 @@
         position: relative;
         &[aria-expanded="true"] {
             visibility: hidden;
-            bottom: 60vh;
+            bottom: 74vh;
+            div {
+                display: flex;
+                justify-content: center;
+            }
+            &, div {min-width: 100%;}
             &, ~ div {z-index: 1100;}
             svg {
+                height: 20vh;
+                width:  20vh;
                 visibility: visible;
-                left: 88px;
+                border-radius: 50%;
+                foreignObject {
+                    x: 4;
+                    mask: none;
+                    border-radius: 50%;
+                }
+                rect {display: none;}
             }
             ~ .flex-1xMQg5 {
                 left: -32px;
