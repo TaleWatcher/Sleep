@@ -1,4 +1,4 @@
-[id^=popout] {
+[id^=popout]:not(#popout_6) {
     top: 0 !important;
     left: 72px;
     height: 100vh;
