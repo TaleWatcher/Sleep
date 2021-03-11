@@ -4,19 +4,21 @@
     height: 2.4vh;
     margin-top: 0.5vh;
 }
-.container-3baos1 {
-    position: relative;
-    .avatarWrapper-2yR4wp {
+.panels-j1Uci_ {
+    z-index: 1100;
+    .container-3baos1 {
         position: relative;
-        &[aria-expanded="true"] {
-            margin: 0;
-            visibility: hidden;
-            bottom: 74vh;
-            div {
-                display: flex;
-                justify-content: center;
-            }
-            &, div {min-width: 100%;}
+        .avatarWrapper-2yR4wp {
+            position: relative;
+            &[aria-expanded="true"] {
+                margin: 0;
+                visibility: hidden;
+                bottom: 74vh;
+                div {
+                    display: flex;
+                    justify-content: center;
+                }
+                &, div {min-width: 100%;}
                 // &, ~ div {z-index: 1100;}
                 svg {
                     height: 20vh;
@@ -63,6 +65,7 @@
             position: relative;
         }
     }
+}
 #popout_6 {
     top: 0 !important;
     height: 100vh;
