@@ -1,14 +1,59 @@
 // Inspired by Nyria's Comfy theme
 
+// User Area
 .container-3baos1 {
-    .canCopy-2VBT7N.nameTag-3uD-yy {display: none;}
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 26px 26px;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". a . b b b b ."
+        "c c c c c c c c";
+
+    .avatarWrapper-2yR4wp {
+        &[aria-expanded=false] {
+            &, ~ .nameTag-3uD-yy {
+                visibility: hidden;
+                transform: translateY(18px);
+            }
+        }
+        &[aria-expanded=true] {
+            &, ~ .nameTag-3uD-yy {
+                // transition-delay: 1s;
+                transform: translateY(-52px - 66px);
+                z-index: 1003;
+            }
+        }
+    }
+    .flex-1xMQg5 {transform: translateY(-12px);}
+    .avatarWrapper-2yR4wp {grid-area: a;}
+    .nameTag-3uD-yy {grid-area: b;}
+    .subtext-3CDbHg {display: none;}
     .flex-1xMQg5 {
+        grid-area: c;
         flex-grow:1 !important;
         justify-content:space-between;
         margin:0 16px;
     }
+    &:hover {
+        height: 52px * 2;
+        .avatarWrapper-2yR4wp{
+            &[aria-expanded=false] {
+                &, ~ .nameTag-3uD-yy {
+                    visibility: visible;
+                }
+            }
+            &[aria-expanded=true] {
+                &, ~ .nameTag-3uD-yy {
+                    transform: translateY(-66px);
+                }
+            }
+        }
+        .flex-1xMQg5 {transform: translateY(40px);}
+    }
 }
 
+// ACTUAL status picker
 .status-1fhblQ, .description-2L932D, .separator-2I32lJ {display: none;}
 .mask-1qbNWk.icon-1IxfJ2 {
     --status-icon-size: 75%;
@@ -27,3 +72,16 @@
 }
 .item-1tOPte.colorDefault-2K3EoJ:nth-of-type(7) {grid-column: 1/5;}
 .customText-tY5LJn {font-size: 15px;}
+.customStatusItem-1TTIxM {
+    grid-template-areas: "status";
+    grid-template-columns: 1fr;
+}
+.clearStatusButton-1Mxs1q {display: none;}
+
+#status-picker {
+    padding: (52px * 1.1) 10px 0;
+    width: 240px;
+    transform: translateX(-34px) translateY(136px);
+    background-color: var(--background-secondary-alt);
+    box-shadow: none;
+}
